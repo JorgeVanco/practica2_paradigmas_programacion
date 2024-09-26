@@ -17,7 +17,11 @@
 
         public void TriggerRadar(Vehicle vehicle)
         {
-            plate = vehicle.GetPlate();
+            if (vehicle is VehicleWithPlate vehicleWithPlate) {
+                plate = vehicleWithPlate.GetPlate();
+            }else {
+                plate = "";
+            }
             speed = vehicle.GetSpeed();
             SpeedHistory.Add(speed);
         }
@@ -36,7 +40,8 @@
 
         public virtual string WriteMessage(string radarReading)
         {
-            return $"Vehicle with plate {plate} at {speed.ToString()} km/h. {radarReading}";
+            string hasPlate = plate != string.Empty ? $"plate {plate}" : "no plate";
+            return $"Vehicle with {hasPlate} at {speed.ToString()} km/h. {radarReading}";
         }
     }
 }
