@@ -25,8 +25,7 @@
             taxi2.StartRide();
             policeCar2.UseRadar(taxi2);
             policeCar2.StartPatrolling();
-            // policeCar2.UseRadar(taxi2);
-            policeCar2.UseRadar(scooter);
+            policeCar2.UseRadar(taxi2);
             taxi2.StopRide();
             policeCar2.EndPatrolling();
 
@@ -40,6 +39,8 @@
 
             policeCar1.PrintRadarHistory();
             policeCar2.PrintRadarHistory();
+
+
 
         }
     }

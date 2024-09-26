@@ -7,19 +7,21 @@
         private bool isPatrolling;
         private SpeedRadar speedRadar;
         private bool isInPersecution= false;
-        private string persecutionPlate;
+        private string persecutionPlate = "";
         private PoliceStation policeStation;
 
-        public PoliceCar(string plate, PoliceStation policeStation) : base(typeOfVehicle, plate)
+        public PoliceCar(string plate, PoliceStation policeStation, SpeedRadar radar = null) : base(typeOfVehicle, plate)
         {
             isPatrolling = false;
-            speedRadar = new SpeedRadar();
+            speedRadar = radar;
             this.policeStation = policeStation;
+
         }
 
         public void UseRadar(Vehicle vehicle)
         {
-            if (isPatrolling)
+
+            if (isPatrolling && speedRadar != null)
             {
                 speedRadar.TriggerRadar(vehicle);
                 string meassurement = speedRadar.GetLastReading();
@@ -64,11 +66,16 @@
 
         public void PrintRadarHistory()
         {
-            Console.WriteLine(WriteMessage("Report radar speed history:"));
-            foreach (float speed in speedRadar.SpeedHistory)
-            {
-                Console.WriteLine(speed);
+            if (speedRadar != null) {
+                Console.WriteLine(WriteMessage("Report radar speed history:"));
+                foreach (float speed in speedRadar.SpeedHistory) {
+                    Console.WriteLine(speed);
+                }
             }
+            else {
+                Console.WriteLine(WriteMessage("Has no radar."));
+            }
+            
         }
 
         public void StartPersecution(string plate, bool wasAlerted = false) { 
