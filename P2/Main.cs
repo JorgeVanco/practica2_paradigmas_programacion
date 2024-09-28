@@ -8,11 +8,17 @@
             Taxi taxi1 = new Taxi("0001 AAA");
             Taxi taxi2 = new Taxi("0002 BBB");
             Scooter scooter = new Scooter("Scooter");
+            City city = new City("Madrid");
+            city.RegisterLicense(taxi1.GetPlate());
+            city.RegisterLicense(taxi2.GetPlate());
 
-            PoliceStation policeStation = new PoliceStation();
+            PoliceStation cityStation = city.CityPoliceStation;
+            
+            SpeedRadar speedRadar1 = new SpeedRadar();
+            PoliceCar policeCar1 = cityStation.RegisterPolice("0001 CNP", speedRadar1);
 
-            PoliceCar policeCar1 = new PoliceCar("0001 CNP", policeStation);
-            PoliceCar policeCar2 = new PoliceCar("0002 CNP", policeStation);
+            // Police without a speedRadar
+            PoliceCar policeCar2 = cityStation.RegisterPolice("0002 CNP");
 
             Console.WriteLine(taxi1.WriteMessage("Created"));
             Console.WriteLine(taxi2.WriteMessage("Created"));

@@ -13,9 +13,11 @@ namespace Practice1
         public PoliceStation() {
             PoliceCars = new List<PoliceCar>();
         }
-        public void RegisterPolice(string plate) {
-            PoliceCars.Add(new PoliceCar(plate, this));
+        public PoliceCar RegisterPolice(string plate, SpeedRadar speedRadar = null) {
+            PoliceCar newPoliceCar = new PoliceCar(plate, this, speedRadar);
+            PoliceCars.Add(newPoliceCar);
             Console.WriteLine($"Registered Police Car with plate {plate}");
+            return newPoliceCar;
         }
         
         public void Alert(string plate) {
