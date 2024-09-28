@@ -47,6 +47,7 @@
             cityStation.EndAlert();
             taxi1.StopRide();
             policeCar1.EndPatrolling();
+            city.RemoveLicense(taxi1.GetPlate());
 
             policeCar1.PrintRadarHistory();
             policeCar2.PrintRadarHistory();

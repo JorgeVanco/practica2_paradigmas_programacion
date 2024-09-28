@@ -17,10 +17,12 @@ namespace Practice1
         }
 
         public void RegisterLicense(string license) {
+            Console.WriteLine(WriteMessage($"Registering license {license}"));
             licenses.Add(license);
         }
 
         public void RemoveLicense(string license) {
+            Console.WriteLine(WriteMessage($"Removing license {license}"));
             licenses.Remove(license);
         }
 
