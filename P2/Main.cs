@@ -20,6 +20,9 @@
             // Police without a speedRadar
             PoliceCar policeCar2 = cityStation.RegisterPolice("0002 CNP");
 
+            SpeedRadar speedRadar3 = new SpeedRadar();
+            PoliceCar policeCar3 = cityStation.RegisterPolice("0003 CNP", speedRadar3);
+
             Console.WriteLine(taxi1.WriteMessage("Created"));
             Console.WriteLine(taxi2.WriteMessage("Created"));
             Console.WriteLine(policeCar1.WriteMessage("Created"));
@@ -39,7 +42,9 @@
             taxi1.StartRide();
             policeCar1.StartPatrolling();
             policeCar1.UseRadar(taxi1);
+            policeCar1.StartPersecution(taxi1.GetPlate());
             taxi1.StopRide();
+            cityStation.EndAlert();
             taxi1.StopRide();
             policeCar1.EndPatrolling();
 

@@ -16,12 +16,22 @@ namespace Practice1
         public PoliceCar RegisterPolice(string plate, SpeedRadar speedRadar = null) {
             PoliceCar newPoliceCar = new PoliceCar(plate, this, speedRadar);
             PoliceCars.Add(newPoliceCar);
-            Console.WriteLine($"Registered Police Car with plate {plate}");
+            Console.WriteLine(WriteMessage($"Registered Police Car with plate {plate}"));
             return newPoliceCar;
         }
         
         public void Alert(string plate) {
+            Console.WriteLine(WriteMessage("Alerting every police car"));
             PoliceCars.ForEach(policeCar => policeCar.StartPersecution(plate, true));
+        }
+
+        public void EndAlert() {
+            Console.WriteLine(WriteMessage("End of alert"));
+            PoliceCars.ForEach(policeCar => policeCar.StopPersecution());
+        }
+
+        public override string ToString() {
+            return "PoliceStation";
         }
 
         public string WriteMessage(string message) {

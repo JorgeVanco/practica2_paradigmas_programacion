@@ -83,12 +83,17 @@
             persecutionPlate = plate;
             if (!wasAlerted) {
                 policeStation.Alert(plate);
+                Console.WriteLine(WriteMessage($"Sending alert for vehicle with plate: {persecutionPlate}"));
+            }
+            else {
+                Console.WriteLine(WriteMessage($"Was alerted"));
             }
         }
 
         public void StopPersecution() {
             isInPersecution = false;
             persecutionPlate = "";
+            Console.WriteLine(WriteMessage($"Persecution stopped"));
         }
 
     }
