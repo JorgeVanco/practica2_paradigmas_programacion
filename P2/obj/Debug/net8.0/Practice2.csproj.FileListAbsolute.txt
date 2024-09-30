@@ -1,0 +1,15 @@
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\bin\Debug\net8.0\Practice2.exe
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\bin\Debug\net8.0\Practice2.deps.json
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\bin\Debug\net8.0\Practice2.runtimeconfig.json
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\bin\Debug\net8.0\Practice2.dll
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\bin\Debug\net8.0\Practice2.pdb
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\obj\Debug\net8.0\Practice2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\obj\Debug\net8.0\Practice2.AssemblyInfoInputs.cache
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\obj\Debug\net8.0\Practice2.AssemblyInfo.cs
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\obj\Debug\net8.0\Practice2.csproj.CoreCompileInputs.cache
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\obj\Debug\net8.0\Practice2.sourcelink.json
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\obj\Debug\net8.0\Practice2.dll
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\obj\Debug\net8.0\refint\Practice2.dll
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\obj\Debug\net8.0\Practice2.pdb
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\obj\Debug\net8.0\Practice2.genruntimeconfig.cache
+C:\Users\jurko\OneDrive - Universidad Pontificia Comillas\Documentos\iMAT\3_2024-2025\Paradigmas de la programacion\Practicas\Practica2\P2\obj\Debug\net8.0\ref\Practice2.dll

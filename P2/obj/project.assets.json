@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jurko\\OneDrive - Universidad Pontificia Comillas\\Documentos\\iMAT\\3_2024-2025\\Paradigmas de la programacion\\Practicas\\Practica2\\P2\\Practice1.csproj",
-      "projectName": "Practice1",
-      "projectPath": "C:\\Users\\jurko\\OneDrive - Universidad Pontificia Comillas\\Documentos\\iMAT\\3_2024-2025\\Paradigmas de la programacion\\Practicas\\Practica2\\P2\\Practice1.csproj",
+      "projectUniqueName": "C:\\Users\\jurko\\OneDrive - Universidad Pontificia Comillas\\Documentos\\iMAT\\3_2024-2025\\Paradigmas de la programacion\\Practicas\\Practica2\\P2\\Practice2.csproj",
+      "projectName": "Practice2",
+      "projectPath": "C:\\Users\\jurko\\OneDrive - Universidad Pontificia Comillas\\Documentos\\iMAT\\3_2024-2025\\Paradigmas de la programacion\\Practicas\\Practica2\\P2\\Practice2.csproj",
       "packagesPath": "C:\\Users\\jurko\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jurko\\OneDrive - Universidad Pontificia Comillas\\Documentos\\iMAT\\3_2024-2025\\Paradigmas de la programacion\\Practicas\\Practica2\\P2\\obj\\",
       "projectStyle": "PackageReference",
