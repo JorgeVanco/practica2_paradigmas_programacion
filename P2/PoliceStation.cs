@@ -22,7 +22,7 @@ namespace Practice2
         
         public void Alert(string plate) {
             Console.WriteLine(WriteMessage("Alerting every police car"));
-            PoliceCars.ForEach(policeCar => policeCar.StartPersecution(plate, true));
+            PoliceCars.ForEach(policeCar => policeCar.StartPersecution(plate));
         }
 
         public void EndAlert() {

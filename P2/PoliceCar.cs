@@ -78,18 +78,15 @@
             
         }
 
-        public void StartPersecution(string plate, bool wasAlerted = false) {
-            if (!isInPersecution || persecutionPlate != plate) {
-                isInPersecution = true;
-                persecutionPlate = plate;
-                if (!wasAlerted) {
-                    Console.WriteLine(WriteMessage($"Sending alert for vehicle with plate: {persecutionPlate}"));
-                    policeStation.Alert(plate);
-                }
-                else {
-                    Console.WriteLine(WriteMessage($"Was alerted"));
-                }
-            }
+        public void AlertPoliceStation(string plate) {
+            Console.WriteLine(WriteMessage($"Sending alert for vehicle with plate: {persecutionPlate}"));
+            policeStation.Alert(plate);
+        }
+
+        public void StartPersecution(string plate) {
+            isInPersecution = true;
+            persecutionPlate = plate;
+            Console.WriteLine(WriteMessage($"Started persecution on vehicle with plate {plate}"));
         }
 
         public void StopPersecution() {

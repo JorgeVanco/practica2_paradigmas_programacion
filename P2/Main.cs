@@ -42,7 +42,7 @@
             taxi1.StartRide();
             policeCar1.StartPatrolling();
             policeCar1.UseRadar(taxi1);
-            policeCar1.StartPersecution(taxi1.GetPlate());
+            policeCar1.AlertPoliceStation(taxi1.GetPlate());
             taxi1.StopRide();
             cityStation.EndAlert();
             taxi1.StopRide();
